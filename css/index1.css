@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.circle { 
+    width: 50%;
+    height: 100vh;
+    background: #800000; 
+    border-radius: 0 50% 50% 0;
+    position: absolute;
+    z-index: -1;
+    transform: translateX(-50px);
+ }
+
+ .display {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+ }
+
+ .login-container {
+    position: absolute;
+    left: 9%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+ }
+
+ .login-container h3 {
+    font-size: 40px;
+    color: white;
+ }
+
+ .login-container .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 270px;
+    background-color: #fff;
+    border-radius: 50px;
+ }
+
+ .login-form .input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+    width: 300px;
+ }
+
+ .login-form .input input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 15px;
+    outline: none;
+    font-size: 1em;
+    color: #333;
+ }
+
+ .login-form .input span{
+    position: absolute;
+    left: 0;
+    padding: 12px;
+    pointer-events: none;
+    font-size: 1em;
+    transition: .5s;
+ }
+
+ .login-form .input input:valid ~ span,
+ .login-form .input input:focus ~ span {
+    color: #800000;
+    text-transform: uppercase;
+    transform: translateX(15px) translateY(-6px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background-color: #fff;
+    border-left: 1px solid #800000;
+    border-right: 1px solid #800000;
+    letter-spacing: .2em;
+ }
+
+ .login-form .input input:valid,
+ .login-form .input input:focus {
+    border: 1.8px solid #800000;
+ }
+
+ .login-form .login-button {
+    padding: 13px 25px;
+    border: none;
+    border-radius: 15px;
+    background-color: #800000;
+    color: black;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+ }
+
+ .login-form .login-button:hover {
+    background-color: #f4d71b;
+    color: #333;
+ }
+
+ .login-form h3 {
+    font-size: 25px;
+    margin: 20px 0 0;
+    color: #800000;
+ }
+
+ .logo img{
+    position: absolute;
+    bottom: 230px;
+    left: 60%;
+    width: 500px;
+    height: 500px;
+ }

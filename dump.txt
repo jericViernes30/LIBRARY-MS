@@ -1,0 +1,12 @@
+                <tr>
+                    <?php
+                        while($row = mysqli_fetch_assoc($query)){
+                    ?>
+                        <td> <?php echo $row['ISBN'] ?></td>
+                        <td> <?php echo $row['Title'] ?></td>
+                        <td> <?php echo $row['Author'] ?></td>
+                        <td> <?php echo $row['Series'] ?></td>
+                </tr>
+                <?php
+                    }
+                ?>
